@@ -1,0 +1,142 @@
+body {
+    background: #F9F9F9;
+    font-family: 'Assistant', sans-serif;
+}
+
+header {
+    height: 95px;
+
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 50px;
+
+    text-align: center;
+}
+
+input {
+    border-color: none;
+    border: none;
+}
+
+.user-inputs {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+}
+
+.input-blocks h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.input-blocks {
+
+    color: #ffffff;
+    
+    width: 608px;
+    height: 450px;
+    left: 43px;
+    top: 32px;
+}
+
+#input-2d {
+
+    background: #002CC9;
+    box-shadow: 0px 4px 4px rgba(0, 2, 204, 0.25);
+    border-radius: 39px;
+}
+
+#input-3d {
+    
+    background: #25C00B;
+    box-shadow: 0px 4px 4px rgba(37, 192, 11, 0.25);
+    border-radius: 39px;
+}
+
+.input-title {
+    margin-left: 48px;
+}
+
+.position-elements, .butn {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#coord {
+    width: 100px;
+    height: 25px;
+    margin-top: 4px;
+    font-size: 15pt;
+}
+
+#block-type {
+    margin-left: 60px;
+}
+
+.block-name {
+    width: 300px;
+    height: 30px;
+    margin-left: 60px;
+    font-size: 15pt;
+}
+
+button {
+    width: 164px;
+    height: 37px;
+    left: 172px;
+    top: 543px;
+    border-radius: 54px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: 700;
+    outline: none;
+
+}
+
+button:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.30)
+
+}
+
+#generate-2d {
+
+    background: #03A2D5;
+}
+
+#generate-3d {
+
+    background: #198007;
+}
+
+#generate-2d:hover {
+
+    background: #ffffff;
+    color: #03A2D5;
+}
+
+#generate-3d:hover {
+
+    background: #ffffff;
+    color: #198007;
+}
+
+
+#code-answer {
+    width: auto;
+    height: 80px;
+    background-color: #c7c7c7;
+    border-radius: 20px;
+    font-family: 'Fira Code', monospace;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin: 15px;
+}

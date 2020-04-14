@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building-maker Minecraft</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Assistant:wght@600;700&family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>Building-Maker Minecraft</header>
+
+    <div class="user-inputs">
+
+        <section class="input-blocks" id="input-2d">
+
+            <h1>2D</h1>
+
+            <div id="initial-position">
+                <p class="input-title">Posição Inicial</p>
+
+                <div class="position-elements">
+    
+                    <div class="coord-inputs">
+                        x<br>
+                        <input type="number" name="coord-x" id="coord">
+                    </div>
+                    <div class="coord-inputs">
+                        y<br>
+                        <input type="number" name="coord-y" id="coord">
+                    </div>
+                    <div class="coord-inputs">
+                        z<br>
+                        <input type="number" name="coord-z" id="coord">
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div id="final-position">
+                <p class="input-title">Posição Final</p>
+
+                <div class="position-elements">
+    
+                    <div class="coord-inputs">
+                        x<br>
+                        <input type="number" name="coord-x" id="coord">
+                    </div>
+                    <div class="coord-inputs">
+                        y<br>
+                        <input type="number" name="coord-y" id="coord">
+                    </div>
+                    <div class="coord-inputs">
+                        z<br>
+                        <input type="number" name="coord-z" id="coord">
+                    </div>
+    
+                </div>
+            </div>
+            
+            <p class="input-title">Bloco</p>
+
+            <input type="text" class="block-name">
+                
+            <div class="butn">
+
+                <p class="btn">
+                    <button id="generate-2d">Gerar código</button>
+                </p>
+            </div>
+
+        </section>
+
+        <section class="input-blocks" id="input-3d">
+
+            <h1>3D</h1>
+
+            <div id="initial-position">
+                <p class="input-title">Posição Inicial</p>
+
+                <div class="position-elements">
+    
+                    <div class="coord-inputs">
+                        x<br>
+                        <input type="number" name="coord-x" id="coord">
+                    </div>
+                    <div class="coord-inputs">
+                        y<br>
+                        <input type="number" name="coord-y" id="coord">
+                    </div>
+                    <div class="coord-inputs">
+                        z<br>
+                        <input type="number" name="coord-z" id="coord">
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div id="final-position">
+                <p class="input-title">Posição Final</p>
+
+                <div class="position-elements">
+    
+                    <div class="coord-inputs">
+                        x<br>
+                        <input type="number" name="coord-x" id="coord">
+                    </div>
+                    <div class="coord-inputs">
+                        y<br>
+                        <input type="number" name="coord-y" id="coord">
+                    </div>
+                    <div class="coord-inputs">
+                        z<br>
+                        <input type="number" name="coord-z" id="coord">
+                    </div>
+    
+                </div>
+            </div>
+            
+            <p class="input-title">Bloco</p>
+
+            <input type="text" class="block-name">
+                
+            <div class="butn">
+
+                <p class="btn">
+                    <button id="generate-3d">Gerar código</button>
+                </p>
+            </div>
+
+        </section>
+
+
+
+    </div>
+
+
+
+    <div id="answer">
+        <div id="code-answer">
+            <p>>> Código</p>
+        </div>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
