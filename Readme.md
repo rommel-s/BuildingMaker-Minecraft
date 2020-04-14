@@ -14,3 +14,4 @@ códigos de programação, onde são sucintos e de fácil entendimento.
 - [ ] Conseguir converter os blocos dentro da estrutura 3D em ar, sem danificar a parte externa
 - [ ] Criar as coordenadas de ar mesmo se forem numeros negativos
 - [ ] Importar os data values dos blocos para pesquisa interna do programa
+- [x] Criar uma interface de fácil entendimento do usuário
