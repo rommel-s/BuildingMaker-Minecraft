@@ -24,15 +24,15 @@
     
                     <div class="coord-inputs">
                         x<br>
-                        <input type="number" name="coord-x" id="coord">
+                        <input type="number" id="ini-coord-x-2d" class="coord">
                     </div>
                     <div class="coord-inputs">
                         y<br>
-                        <input type="number" name="coord-y" id="coord">
+                        <input type="number" id="ini-coord-y-2d" class="coord">
                     </div>
                     <div class="coord-inputs">
                         z<br>
-                        <input type="number" name="coord-z" id="coord">
+                        <input type="number" id="ini-coord-z-2d" class="coord">
                     </div>
                     
                 </div>
@@ -45,15 +45,15 @@
     
                     <div class="coord-inputs">
                         x<br>
-                        <input type="number" name="coord-x" id="coord">
+                        <input type="number" id="end-coord-x-2d" class="coord">
                     </div>
                     <div class="coord-inputs">
                         y<br>
-                        <input type="number" name="coord-y" id="coord">
+                        <input type="number" id="end-coord-y-2d" class="coord">
                     </div>
                     <div class="coord-inputs">
                         z<br>
-                        <input type="number" name="coord-z" id="coord">
+                        <input type="number" id="end-coord-z-2d" class="coord">
                     </div>
     
                 </div>
@@ -61,13 +61,12 @@
             
             <p class="input-title">Bloco</p>
 
-            <input type="text" class="block-name">
-                
+            <input type="text" class="block-name" placeholder="Qual tipo de bloco?"> 
+
             <div class="butn">
 
-                <p class="btn">
-                    <button id="generate-2d">Gerar código</button>
-                </p>
+                <button id="generate-2d" onclick="generate2D()">Gerar código</button>
+                
             </div>
 
         </section>
@@ -83,15 +82,15 @@
     
                     <div class="coord-inputs">
                         x<br>
-                        <input type="number" name="coord-x" id="coord">
+                        <input type="number" id="ini-coord-x-3d" class="coord">
                     </div>
                     <div class="coord-inputs">
                         y<br>
-                        <input type="number" name="coord-y" id="coord">
+                        <input type="number" id="ini-coord-y-3d" class="coord">
                     </div>
                     <div class="coord-inputs">
                         z<br>
-                        <input type="number" name="coord-z" id="coord">
+                        <input type="number" id="ini-coord-z-3d" class="coord">
                     </div>
                     
                 </div>
@@ -104,15 +103,15 @@
     
                     <div class="coord-inputs">
                         x<br>
-                        <input type="number" name="coord-x" id="coord">
+                        <input type="number" id="end-coord-x-3d" class="coord">
                     </div>
                     <div class="coord-inputs">
                         y<br>
-                        <input type="number" name="coord-y" id="coord">
+                        <input type="number" id="end-coord-y-3d" class="coord">
                     </div>
                     <div class="coord-inputs">
                         z<br>
-                        <input type="number" name="coord-z" id="coord">
+                        <input type="number" id="end-coord-z-3d" class="coord">
                     </div>
     
                 </div>
@@ -120,13 +119,12 @@
             
             <p class="input-title">Bloco</p>
 
-            <input type="text" class="block-name">
-                
+            <input type="text" class="block-name" placeholder="Qual tipo de bloco?"> 
+
             <div class="butn">
 
-                <p class="btn">
-                    <button id="generate-3d">Gerar código</button>
-                </p>
+                <button id="generate-3d" onclick="generate3D()">Gerar código</button>
+                
             </div>
 
         </section>
