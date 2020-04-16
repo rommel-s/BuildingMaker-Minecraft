@@ -16,6 +16,7 @@ const endCoordX3D = document.getElementById("end-coord-x-3d")
 const endCoordY3D = document.getElementById("end-coord-y-3d")
 const endCoordZ3D = document.getElementById("end-coord-z-3d")
 
+//User inputs
 const blockName2D = document.querySelector(" #block-2d")
 const blockName3D = document.querySelector(" #block-3d")
 
@@ -34,8 +35,17 @@ function generate2D() {
 
     let blockString = String(blockName2D.value)
 
-    answer.innerHTML = `>> /fill ${initX} ${initY} ${initZ} ${endX} ${endY} ${endZ} ${blockString}`
-    
+    if (initCoordX.value.length == 0 || initCoordY.value.length == 0 || initCoordZ.value.length == 0 || endCoordX.value.length == 0 || endCoordZ.value.length == 0) {
+        alert("Confira os valores e tente novamente")
+    } else if (initCoordY.value != endCoordY.value) {
+        endY = initY
+        alert("Os valores da altura Y são diferentes, portanto foi mantido o mesmo valor da altura inicial X")
+        answer.innerHTML = `>> /fill ${initX} ${initY} ${initZ} ${endX} ${endY} ${endZ} ${blockString}`
+    } else {
+        answer.innerHTML = `>> /fill ${initX} ${initY} ${initZ} ${endX} ${endY} ${endZ} ${blockString}`
+
+    }
+
 }
 
 function generate3D() {
@@ -50,6 +60,11 @@ function generate3D() {
     
     let blockString3D = String(blockName3D.value)
     
-    answer.innerHTML = `>> /fill ${initX3d} ${initY3d} ${initZ3d} ${endX3d} ${endY3d} ${endZ3d} ${blockString3D}`
+    if (initCoordX3D.value.length == 0 || initCoordY3D.value.length == 0 || initCoordZ3D.value.length == 0 || endCoordX3D.value.length == 0 || endCoordY3D.value.length == 0 || endCoordZ3D.value.length == 0) {
+        alert("Confira os valores e tente novamente")
+    } else {
+        answer.innerHTML = `>> /fill ${initX3d} ${initY3d} ${initZ3d} ${endX3d} ${endY3d} ${endZ3d} ${blockString3D}`
+
+    }
 
 }
