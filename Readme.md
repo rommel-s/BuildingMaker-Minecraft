@@ -10,8 +10,8 @@ códigos de programação, onde são sucintos e de fácil entendimento.
 ## Tasks
 
 - [x] Criar a versão 2D do Building Maker
-- [ ] Criar a parte 3D do Building Maker
-- [ ] Conseguir converter os blocos dentro da estrutura 3D em ar, sem danificar a parte externa
-- [x] Criar as coordenadas de ar mesmo se forem numeros negativos
-- [ ] Importar os data values dos blocos para pesquisa interna do programa
+- [x] Criar a parte 3D do Building Maker
 - [x] Criar uma interface de fácil entendimento do usuário
+- [ ] Conseguir converter os blocos dentro da estrutura 3D em ar, sem danificar a parte externa
+- [ ] Criar as coordenadas de ar mesmo se forem numeros negativos
+- [ ] Importar os data values dos blocos para pesquisa interna do programa
