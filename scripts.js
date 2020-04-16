@@ -16,7 +16,8 @@ const endCoordX3D = document.getElementById("end-coord-x-3d")
 const endCoordY3D = document.getElementById("end-coord-y-3d")
 const endCoordZ3D = document.getElementById("end-coord-z-3d")
 
-const blockName = document.querySelector(" .block-name")
+const blockName2D = document.querySelector(" #block-2d")
+const blockName3D = document.querySelector(" #block-3d")
 
 const answer = document.getElementById("code-answer")
 
@@ -31,7 +32,7 @@ function generate2D() {
     let endY = Number(endCoordY.value)
     let endZ = Number(endCoordZ.value)
 
-    let blockString = String(blockName.value)
+    let blockString = String(blockName2D.value)
 
     answer.innerHTML = `>> /fill ${initX} ${initY} ${initZ} ${endX} ${endY} ${endZ} ${blockString}`
     
@@ -47,8 +48,8 @@ function generate3D() {
     let endY3d = Number(endCoordY3D.value)
     let endZ3d = Number(endCoordZ3D.value)
     
-    let blockString = String(blockName.value)
+    let blockString3D = String(blockName3D.value)
     
-    answer.innerHTML = `>> /fill ${initX3d} ${initY3d} ${initZ3d} ${endX3d} ${endY3d} ${endZ3d} ${blockString}`
+    answer.innerHTML = `>> /fill ${initX3d} ${initY3d} ${initZ3d} ${endX3d} ${endY3d} ${endZ3d} ${blockString3D}`
 
 }
